@@ -6,8 +6,8 @@ namespace BlackJack
 {
     public class ParticipantGenerator
     {
-        private IParticipantBuilder _participantBuilder;
-        private List<Participant> _participants;
+        private readonly IParticipantBuilder _participantBuilder;
+        private readonly List<Participant> _participants;
         public ParticipantGenerator(IParticipantBuilder participantBuilder)
         {
             _participantBuilder = participantBuilder;

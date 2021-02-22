@@ -4,15 +4,14 @@ using System.Text;
 
 namespace BlackJack
 {
-    class WriteOutCome
+    public class WriteOutCome
     {
-        private Participant _dealer;
-        private List<Participant> _players;
+        private readonly Participant _dealer;
+        private readonly List<Participant> _players;
         public WriteOutCome(Participant dealer, List<Participant> players)
         {
             _dealer = dealer;
             _players = players;
-
         }
         public void WritePlayerRoundOutCome()
         {

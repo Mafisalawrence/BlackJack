@@ -6,7 +6,7 @@ namespace BlackJack
 {
     public class CardGenerator
     {
-        private ICardBuilder _cardBuilder;
+        private readonly ICardBuilder _cardBuilder;
         public CardGenerator(ICardBuilder cardBuilder)
         {
             _cardBuilder = cardBuilder;
