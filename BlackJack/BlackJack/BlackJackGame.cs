@@ -26,10 +26,10 @@ namespace BlackJack
             }
             return OutComeStatus.Loses;
         }
-        private int TotalValue(List<Card> playerCards)
+        private int TotalValue(List<Card> cards)
         {
-            int sum = playerCards.Select(x => x.Value).Sum();
-            var aceCount = playerCards.Where(x => x.Value == (int)CardType.Ace).Select(x => x.Value).Sum();
+            int sum = cards.Select(x => x.Value).Sum();
+            var aceCount = cards.Where(x => x.Value == 11).Select(x => x.Value).Count();
             while (aceCount > 1 && sum > 21) {
                 sum = sum - 11 + 1;
                 aceCount--;
@@ -37,7 +37,6 @@ namespace BlackJack
             return sum;
 
         }
-
     }
 
     }
