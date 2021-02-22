@@ -7,7 +7,7 @@ namespace BlackJack
     public class Participant
     {
         public string Name { get; set; }
-        public List<Card> PlayerCards { get; set; } = new List<Card>(); 
+        public List<Card> Cards { get; set; } = new List<Card>(); 
         public int SumOfCards { get; set; }
         public string Status { get; set; }
     }

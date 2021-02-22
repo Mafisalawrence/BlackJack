@@ -25,7 +25,7 @@ namespace BlackJack
         private void WriteParticipantHand(Participant participant)
         {
             Console.WriteLine(participant.Name);
-            foreach (var card in participant.PlayerCards)
+            foreach (var card in participant.Cards)
             {
                 Console.WriteLine(card.ToString());
             }
