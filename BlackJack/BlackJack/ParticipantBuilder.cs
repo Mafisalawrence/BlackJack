@@ -15,10 +15,6 @@ namespace BlackJack
         {
             _participant.Name = name;
         }
-        public void SetSumOfCards(int sum)
-        {
-            _participant.SumOfCards = sum;
-        }
         public void SetCards(List<string> cards){
             cards.ForEach(x =>
             {
