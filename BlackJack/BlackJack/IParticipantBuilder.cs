@@ -8,6 +8,7 @@ namespace BlackJack
     {
         void SetName(string name);
         void SetCards(List<string> cards);
+        void SetSumOfCards();
         Participant GetParticipant();
     }
 }

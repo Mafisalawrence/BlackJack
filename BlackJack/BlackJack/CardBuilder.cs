@@ -7,7 +7,7 @@ namespace BlackJack
     public class CardBuilder :ICardBuilder 
     {
         public Card card = new Card();
-        private string _cardString;
+        private readonly string _cardString;
         public CardBuilder(string card)
         {
             _cardString = card;
@@ -19,7 +19,6 @@ namespace BlackJack
         public void SetCardValue()
         {
             card.Value = CardExtension.GetValue(_cardString);
-          
         }
         public void SetCardSuit()
         {

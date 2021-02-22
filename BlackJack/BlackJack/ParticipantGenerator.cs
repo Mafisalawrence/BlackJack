@@ -22,6 +22,7 @@ namespace BlackJack
         {
             _participantBuilder.SetName(name);
             _participantBuilder.SetCards(cards);
+            _participantBuilder.SetSumOfCards();
             return _participantBuilder.GetParticipant();
         }
         public List<Participant> GetParticipants() => _participants;
