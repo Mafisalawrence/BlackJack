@@ -29,7 +29,7 @@ namespace BlackJack
         private int TotalValue(List<Card> playerCards)
         {
             int sum = playerCards.Select(x => x.Value).Sum();
-            var aceCount = playerCards.Where(x => x.Type == CardType.Ace).Select(x => x.Value).Sum();
+            var aceCount = playerCards.Where(x => x.Value == (int)CardType.Ace).Select(x => x.Value).Sum();
             while (aceCount > 1 && sum > 21) {
                 sum = sum - 11 + 1;
                 aceCount--;
